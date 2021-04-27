@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Aquila:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Aquila="http://www.ustb.edu.cn/sei/mde/Aquila" UUID="a5d34cba-f655-4573-a353-680edca5c36a">
+  <elements xsi:type="Aquila:AqClass" name="Card" abstract="true">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="username" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="password" upperBound="1"/>
+    <operations name="login" upperBound="1"/>
+    <operations name="withdraw" upperBound="1"/>
+    <dependencies target="//@elements.3" kind="call"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="CreditCard" superTypes="//@elements.0">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="balance" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="rate" upperBound="1"/>
+    <operations name="deposit" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="SavingsCard" superTypes="//@elements.0">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="limit" upperBound="1"/>
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="recentArrear" upperBound="1"/>
+    <operations name="repay" upperBound="1"/>
+  </elements>
+  <elements xsi:type="Aquila:AqClass" name="ATM">
+    <structuralFeatures xsi:type="Aquila:AqAttribute" name="position" upperBound="1"/>
+    <operations name="save" upperBound="1"/>
+    <operations name="withdraw" upperBound="1"/>
+  </elements>
+</Aquila:Model>
