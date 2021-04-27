@@ -2,10 +2,10 @@ public {{is_abstract}} class {{classname}} extends {{extendname}}{
     {% for attr in attrs %}
     {{attr.pb}} {{attr.type}} {{attr.name}};{% endfor %}
     {% for attr in attrs %}
-    public void set{{attr.name }}({{attr.type}} {{attr.name}}){
+    public void set{{attr.name|title}}({{attr.type}} {{attr.name}}){
         this.{{attr.name}} =  {{attr.name}};
     };
-    public {{attr.type}} get{{attr.name }}(){
+    public {{attr.type}} get{{attr.name|title}}(){
         return this.{{attr.name}};
     };{% endfor %}
     {% for func in funcs %}
