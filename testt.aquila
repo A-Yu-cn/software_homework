@@ -7,12 +7,12 @@
     <operations name="withdraw" upperBound="1"/>
     <dependencies target="//@elements.3" kind="call"/>
   </elements>
-  <elements xsi:type="Aquila:AqClass" name="CreditCard" superTypes="//@elements.0">
+  <elements xsi:type="Aquila:AqClass" name="SavingsCard" superTypes="//@elements.0">
     <structuralFeatures xsi:type="Aquila:AqAttribute" name="balance" upperBound="1"/>
     <structuralFeatures xsi:type="Aquila:AqAttribute" name="rate" upperBound="1"/>
     <operations name="deposit" upperBound="1"/>
   </elements>
-  <elements xsi:type="Aquila:AqClass" name="SavingsCard" superTypes="//@elements.0">
+  <elements xsi:type="Aquila:AqClass" name="CreditCard" superTypes="//@elements.0">
     <structuralFeatures xsi:type="Aquila:AqAttribute" name="limit" upperBound="1"/>
     <structuralFeatures xsi:type="Aquila:AqAttribute" name="recentArrear" upperBound="1"/>
     <operations name="repay" upperBound="1"/>
